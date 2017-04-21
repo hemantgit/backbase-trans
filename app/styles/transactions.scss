@@ -1,0 +1,118 @@
+.transactions {
+  display: flex;
+  flex-flow: column;
+  flex: 1 0 auto;
+  width: 718px;
+  height: 550px;
+  background-color: $white;
+  margin-top: 50px;
+  overflow-y: auto;
+  padding-bottom: 10px;
+
+  .transactions-header{
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 0 1 auto;
+    background-color: $blue;
+    border-bottom: 2px solid transparent;
+    align-items: center;
+
+    img{
+      width: 40px;
+      height: 40px;
+    }
+
+  }
+
+  .transactions-header_title{
+    color: $white;
+    font-size: 1.25em;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .transactions-container{
+    display: flex;
+    flex-flow: column;
+    flex: 0 1 auto;
+    width: 95%;
+    height: 95%;
+    margin: 10px;
+  }
+
+  .row{
+    display: flex;
+    flex-flow: row;
+    flex: 0 1 auto;
+    width: 100%;
+    //margin: 10px auto;
+    height: 70px;
+  }
+
+  .col1{
+    height: 100%;
+    width: 8px;
+
+
+  }
+
+  .list-img {
+    width: 50px;
+    height: 51px;
+    margin-left: 43px;
+
+  }
+
+  .col2{
+    display: flex;
+    flex-flow: row;
+    flex: 1 0 auto;
+    width: 75%;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid grey;
+    padding: 11px 0px;
+
+  }
+
+  .transaction-date{
+    font-size: 1.2em;
+    margin-left: 32px;
+  }
+
+  .transaction-merchant{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    flex: 0 1 auto;
+    width: 50%;
+   // margin-left: 0px;
+    margin: 0px auto 0px 42px;
+
+
+  }
+
+  .transaction-type{
+    display: flex;
+    margin: -17px auto 4px 0px;
+  }
+
+  .transaction-amt{
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 0px auto;
+  }
+
+  .space{
+    display: flex;
+    flex-flow: row;
+    flex: 0 1 auto;
+    width: 100%;
+    //margin: 10px auto;
+    min-height: 20px;
+  }
+}
+
+
+

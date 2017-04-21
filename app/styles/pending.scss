@@ -1,0 +1,91 @@
+.pending {
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  display: block;
+  width: 518px;
+  height: 518px;
+  background-color: $white;
+  margin-top: 50px;
+  z-index: 100;
+
+  .pending-header{
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 0 1 auto;
+    background-color: $blue;
+    border-bottom: 2px solid transparent;
+    align-items: center;
+
+    img{
+      width: 40px;
+      height: 40px;
+    }
+
+  }
+
+  .pending-header_title{
+    color: $white;
+    font-size: 1.25em;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-container{
+    display: flex;
+    flex-flow: column;
+    flex:  0 1 auto;
+    width: 94%;
+    margin: 0px auto;
+  }
+
+  .form-group{
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0 1 auto;
+    width: 100%;
+    margin: 34px auto;
+    justify-content: space-between;
+    height: 45px;
+  }
+
+  #fromAcct{
+    display: flex;
+    align-self: flex-start;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    width: 100%;
+    font-size: .95em;
+  }
+
+  .label{
+    font-size: .75em;
+  }
+
+  #merchant, #amount{
+    display: flex;
+    align-self: flex-start;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    width: 100%;
+    font-size: .95em;
+  }
+
+  .form-top-margin{
+    margin: 10px auto;
+  }
+
+  .submit{
+    width: 175px;
+    background-color: orange;
+    color: white;
+    border-radius: 2px 2px 2px 2px;
+    margin: 20px auto;
+    height: 40px;
+    font-size: .75em;
+  }
+}
+

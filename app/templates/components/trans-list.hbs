@@ -1,0 +1,28 @@
+<div class="transactions">
+    <div class="transactions-header">
+        <img src="/images/icons/breifcase.png" />
+        <span class="transactions-header_title">Recent Transactions</span>
+    </div>
+    <div class="transactions-container">
+    {{#each trans as | tran|}}
+    <div class="row">
+        <div class="col1" style="background-color: {{tran.categoryCode}}" ></div>
+        <div class="col2">
+            <span class="transaction-date">Oct. 19</span>
+            <img class="list-img" src="{{tran.merchantLogo}}"/>
+            <span class="transaction-merchant"><h3>{{tran.merchant}}</h3>
+            <span class="transaction-type">{{tran.transactionType}}</span>
+            </span>
+            <span class="transaction-amt">-{{tran.amount}}</span>
+
+        </div>
+    </div>
+  {{/each}}
+        <div class="space"></div>
+ </div>
+
+</div>
+
+
+
+

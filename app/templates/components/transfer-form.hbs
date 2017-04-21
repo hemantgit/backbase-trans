@@ -1,0 +1,50 @@
+<div class="transfer">
+    <div class="transfer-header">
+        <img src="/images/icons/arrows.png" />
+        <span class="transfer-header_title">Make a Transfer</span>
+    </div>
+    <form class="form-container">
+        <div class="form-group">
+        <span class="label">FROM ACCOUNT</span><br>
+        <input type="text" id="from" value="{{paytype}}" placeholder="Free Checking(4692 - Available $5824.76)" disabled="disabled">
+    </div>
+        <div class="form-group form-top-margin">
+            <span class="label">TO ACCOUNT</span><br>
+            {{input type="text" id="smerchant" value=smerchant placeholder="Georgia Power Electric Company" disabled="disabled"}}
+
+        </div>
+        <div class="form-group form-top-margin">
+            <span class="label">AMOUNT</span><br>
+            {{input type="currency" id="samount" value=samount placeholder="$0.00" required="required"}}
+
+        </div>
+        <input type="submit" class="submit" value="Submit" {{action "submitForm" onSubmit="submitForm"}}>
+    </form>
+</div>
+{{#if isPending}}
+<div class="pending">
+    <div class="pending-header">
+        <img src="/images/icons/arrows.png" />
+        <span class="pending-header_title">Please Confirm Transfer</span>
+        <span class="close">Cancel</span>
+    </div>
+    <form class="form-container">
+        <div class="form-group">
+            <span class="label">FROM ACCOUNT</span><br>
+            <input type="text" id="fromAcct"  placeholder="Free Checking(4692 - Available $5824.76)" disabled>
+        </div>
+        <div class="form-group form-top-margin">
+            <span class="label">TO ACCOUNT</span><br>
+            {{input type="text" id="merchant" value=merchant placeholder="Georgia Power Electric Company" disabled="disabled"}}
+        </div>
+        <div class="form-group form-top-margin">
+            <span class="label">AMOUNT</span><br>
+            {{input type="number" id="amount" value=amount placeholder="$0.00" required="required"}}
+        </div>
+        <button type="submit" class="submit" value="Submit" {{action "addTrans" onSubmit="submitForm"}}>OK</button>
+    </form>
+
+</div>
+
+<div class="overlay"></div>
+{{/if}}
